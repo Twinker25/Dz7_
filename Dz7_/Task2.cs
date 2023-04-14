@@ -12,11 +12,11 @@ namespace Task2
         void ShowOdd();
     }
 
-    class Array : IOutput2
+    class Array_ : IOutput2
     {
         private int[] arr;
 
-        public Array(int[] arr)
+        public Array_(int[] arr)
         {
             this.arr = arr;
         }

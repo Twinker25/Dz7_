@@ -23,10 +23,10 @@ namespace Dz7_
                         Console.WriteLine($"Number of values greater than {greater}: " + myArray.Greater(greater));
                         break;
                     case 2:
-                        int[] ar = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-                        Task2.Array array = new Task2.Array(ar);
-                        array.ShowEven();
-                        array.ShowOdd();
+                        int[] arr_ = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+                        Task2.Array_ array_ = new Task2.Array_(arr_);
+                        array_.ShowEven();
+                        array_.ShowOdd();
                         break;
                     case 3:
 
