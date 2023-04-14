@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dz7_
+namespace Task2
 {
-    interface ICalc
+    interface IOutput2
     {
-        int Less(int valueToCompare);
-        int Greater(int valueToCompare);
+        void ShowEven();
+        void ShowOdd();
     }
 
-    class Array : ICalc
+    class Array : IOutput2
     {
         private int[] arr;
 
@@ -21,30 +21,30 @@ namespace Dz7_
             this.arr = arr;
         }
 
-        public int Less(int valueToCompare)
+        public void ShowEven()
         {
-            int count = 0;
+            Console.WriteLine("Even numbers:");
             foreach (int num in arr)
             {
-                if (num < valueToCompare)
+                if (num % 2 == 0)
                 {
-                    count++;
+                    Console.Write(num + " ");
                 }
             }
-            return count;
+            Console.WriteLine();
         }
 
-        public int Greater(int valueToCompare)
+        public void ShowOdd()
         {
-            int count = 0;
+            Console.WriteLine("Odd numbers:");
             foreach (int num in arr)
             {
-                if (num > valueToCompare)
+                if (num % 2 != 0)
                 {
-                    count++;
+                    Console.Write(num + " ");
                 }
             }
-            return count;
+            Console.WriteLine();
         }
     }
 }
