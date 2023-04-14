@@ -23,7 +23,7 @@ namespace Task2
 
         public void ShowEven()
         {
-            Console.WriteLine("Even numbers:");
+            Console.WriteLine("\nEven numbers:");
             foreach (int num in arr)
             {
                 if (num % 2 == 0)

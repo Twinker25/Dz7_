@@ -15,7 +15,7 @@ namespace Dz7_
                     case 1:
                         int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
                         Array myArray = new Array(arr);
-                        Console.Write("Enter sort number for less element array: ");
+                        Console.Write("\nEnter sort number for less element array: ");
                         int less = int.Parse(Console.ReadLine());
                         Console.Write("Enter sort number for greater element array: ");
                         int greater = int.Parse(Console.ReadLine());
@@ -29,7 +29,12 @@ namespace Dz7_
                         array_.ShowOdd();
                         break;
                     case 3:
-
+                        int[] data = { 1, 2, 3, 4, 5, 1, 2, 3 };
+                        Task3._Array _array = new Task3._Array(data);
+                        Console.Write("\nEnter number for equal element array: ");
+                        int equal = int.Parse(Console.ReadLine());
+                        Console.WriteLine($"Number of distinct values: {_array.CountDistinct()}");
+                        Console.WriteLine($"Number of values equal to {equal}: {_array.EqualToValue(equal)}");
                         break;
                     default: 
                         Console.WriteLine("Error! Try again!"); 
